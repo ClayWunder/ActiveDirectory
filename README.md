@@ -57,3 +57,11 @@ Login to DC-1 and use Windows Firewall settings to enable ICMPv4 inbound.
 Return to Client-1 to see the ping succeed.
 
 <h2>Install Active Directory</h2>
+
+![Screenshot 2024-01-31 at 4 08 43 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/01b880d7-03a2-4b13-907d-07323c2d440d)
+
+Login to DC-1 and install Active Directory Domain Services. 
+> Server Manager Dashboard
+> Manage
+> Add Roles and Features
+> Active Directory Domain Services

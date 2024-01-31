@@ -42,4 +42,4 @@ In Network Settings, set DC's NIC Private IP address to be static.
 
 Create the Client VM in running Windows 10. Machine should be in same resource group and Vnet as DC-1 Name machine "Client-1"
 
-
+<h2>Ensure Connectivity Between Client and DC</h2>

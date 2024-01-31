@@ -20,7 +20,7 @@ This tutorial outlines the deployment of Microsoft Active Directory in Microsoft
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create Resources
-- Step 1 - 
+- Step 1 - Ensure Connectivity Between Client and Domain Controller.
 - Step 2 - 
 - Step 3 - 
 - Step 4 - 
@@ -43,3 +43,17 @@ In Network Settings, set DC's NIC Private IP address to be static.
 Create the Client VM in running Windows 10. Machine should be in same resource group and Vnet as DC-1 Name machine "Client-1"
 
 <h2>Ensure Connectivity Between Client and DC</h2>
+
+![Screenshot 2024-01-31 at 3 59 10 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/9c478fd2-7f16-4a48-b91e-c6da803ee1f4)
+
+Login to Client-1 with Microsoft Remote Desktop and ping DC-1's private IP address (perpetual ping).
+
+![Screenshot 2024-01-31 at 4 01 53 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/7848a6ea-dc6d-4ef3-916e-b11d30e83f03)
+
+Login to DC-1 and use Windows Firewall settings to enable ICMPv4 inbound.
+
+![Screenshot 2024-01-31 at 4 03 29 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/3e18791e-d2c1-4764-9d5a-22718ac329f3)
+
+Return to Client-1 to see the ping succeed.
+
+<h2>Install Active Directory</h2>

@@ -9,8 +9,10 @@ This tutorial outlines the deployment of Microsoft Active Directory in Microsoft
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Active Directory
+- Microsoft Server Manager
 - Remote Desktop
-- Windows Powershell
+- Windows Powershell_ISE
 
 <h2>Operating Systems Used </h2>
 
@@ -21,11 +23,11 @@ This tutorial outlines the deployment of Microsoft Active Directory in Microsoft
 
 - Create Resources
 - Step 1 - Ensure Connectivity Between Client and Domain Controller.
-- Step 2 - 
-- Step 3 - 
-- Step 4 - 
-- Step 5 - 
-- Step 6 - 
+- Step 2 - Install Active Directory.
+- Step 3 - Create Admin and Normal user Account in AD.
+- Step 4 - Join Client-1 to Domain.
+- Step 5 - Setup Remote Desktop for Non-admin Users on Client-1.
+- Step 6 - Create users
 - Cleanup
 
 <h2>Create Resources</h2>

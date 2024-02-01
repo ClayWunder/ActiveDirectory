@@ -83,14 +83,16 @@ Return to Client-1 to see the ping succeed.
 <h2>Create Admin and Normal User Account in AD</h2>
 
 ![Screenshot 2024-02-01 at 1 46 10 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/dc036758-34e5-4cb5-a6d9-2eb0972ab2c7)
+![Screenshot 2024-02-01 at 1 49 17 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/d8c7a083-d289-48e6-af06-ededb71103fa)
 
 - In AD Users and Computers (ADUC), create an Organizational Unit (OU) called "_EMPLOYEES"
 - Create an Organizational Unit (OU) called "_ADMINS"
 
+![Screenshot 2024-02-01 at 1 49 17 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/6b3841a6-b75e-4c2d-af46-3f9fd917569d)
 
 Create a new employee named "Jane Doe" (same password) with the username of "jane_admin"
 
-
+![Screenshot 2024-02-01 at 1 51 15 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/a6d8807a-f44e-48c7-b25f-5d44565b45b2)
 
 Add jane_admin to the "Domain Admins" Security Group
 

@@ -88,7 +88,7 @@ Return to Client-1 to see the ping succeed.
 - In AD Users and Computers (ADUC), create an Organizational Unit (OU) called "_EMPLOYEES"
 - Create an Organizational Unit (OU) called "_ADMINS"
 
-![Screenshot 2024-02-01 at 1 49 17 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/6b3841a6-b75e-4c2d-af46-3f9fd917569d)
+![Screenshot 2024-02-01 at 1 50 31 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/071e4efa-74b2-4d6f-9dc5-e33b45f91d30)
 
 Create a new employee named "Jane Doe" (same password) with the username of "jane_admin"
 
@@ -96,6 +96,45 @@ Create a new employee named "Jane Doe" (same password) with the username of "jan
 
 Add jane_admin to the "Domain Admins" Security Group
 
-
-
 Logout / Close the remote desktop connection to DC-1 and log back in as mydomain.com/jane_admin
+
+<h2>Join Client-1 to your domain (mydomain.com)</h2>
+
+![Screenshot 2024-02-01 at 1 55 46 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/b8ab0704-9775-4415-acde-53ccfda3a798)
+
+From Azure Portal, set Client-1's DMS settings to DC-1's private IP address.
+From Azure Portal, restart Client-1
+Login to Client-1 as the original local admin (labuser) and join it to the domain. (Computer will restart)
+
+![Screenshot 2024-02-01 at 2 08 42 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/79af385e-8d60-4d5e-8ef0-d01ed193b03e)
+
+Login to DC-1 and verify Client-1 shows up in Active Directory Users and Computers inside the "Computers" container on the root of the domain.
+
+![Screenshot 2024-02-01 at 2 09 37 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/9733552e-ea9e-4214-a5e0-79d9b4c792f7)
+![Screenshot 2024-02-01 at 2 10 55 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/54325a4d-82b8-435b-ae3a-0bb72ae392a7)
+
+Create new OU named "_CLIENTS" and drag Client-1 into it.
+
+![Screenshot 2024-02-01 at 2 14 56 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/b48a3687-2a09-4e6a-9f49-3be461f2a2c1)
+
+<h2>Setup Remote Desktop for non-admin users on Client-1</h2>
+
+![Screenshot 2024-02-01 at 2 13 05 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/3c281e4e-1b4c-4902-83c8-b101eae8d33e)
+
+Login to Client-1 as jane_admin and open system properties.
+
+![Screenshot 2024-02-01 at 2 13 55 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/445288b0-385e-4431-abcf-d85571768819)
+
+Select "Remote Desktop"
+
+![Screenshot 2024-02-01 at 2 14 56 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/faca5e2c-73c3-46db-95e5-89404b1c2803)
+
+Allow "domain users" access to remote desktop.
+
+<h2>Create Users and Attempt To Use Them</h2>
+
+Login to DC-1 as jane_admin.
+Open Microsoft Poweshell_ISE as admin.
+Create new file and paste the contents of the script into it.
+Run the script and observe accounts being created
+When finished, open ADUC and observe the accounts in the appropriate OU.

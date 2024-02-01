@@ -60,23 +60,23 @@ Return to Client-1 to see the ping succeed.
 
 ![Screenshot 2024-01-31 at 4 08 43 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/01b880d7-03a2-4b13-907d-07323c2d440d)
 
-Login to DC-1 and install Active Directory Domain Services. 
-> Server Manager Dashboard
-> Manage
-> Add Roles and Features
-> Active Directory Domain Services
+- Login to DC-1 and install Active Directory Domain Services. 
+- Server Manager Dashboard
+- Manage
+- Add Roles and Features
+- Active Directory Domain Services
 
 ![Screenshot 2024-01-31 at 4 11 59 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/28d20517-7c7e-4663-8814-9663664a356f)
 
-> Click yellow flag in Server Manager Dashboard.
-> Click Promote This Server to Domain Controller.
-> Add New Forest
-> Choose Root Domain Name (mydomain.com)
-> Choose Password
+- Click yellow flag in Server Manager Dashboard.
+- Click Promote This Server to Domain Controller.
+- Add New Forest
+- Choose Root Domain Name (mydomain.com)
+- Choose Password
 
 ![Screenshot 2024-01-31 at 4 17 34 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/06fa5fc9-b9e3-44ca-9f5f-a6981cc13f94)
 
-> Continue Through Install Wizard
-> You will be automatically disconnected from DC-1 once complete.
-> Re-log back into DC-1 as user mydomain.com/labuser
+- Continue Through Install Wizard
+- You will be automatically disconnected from DC-1 once complete.
+- Re-log back into DC-1 as user mydomain.com/labuser
 

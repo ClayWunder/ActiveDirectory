@@ -135,5 +135,12 @@ Allow "domain users" access to remote desktop.
 
 Login to DC-1 as jane_admin.
 Open Microsoft Poweshell_ISE as admin.
+
+![Screenshot 2024-02-01 at 2 25 20 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/ad88ad76-267f-4708-9f3c-99eeb65d7a4a)
+
 Create new file and paste the contents of the [script](https://github.com/ClayWunder/create-users-in-AD-script) into it.
-Run the script and observe accounts being created When finished, open ADUC and observe the accounts in the appropriate OU.
+Run the script and observe accounts being created. 
+
+![Screenshot 2024-02-01 at 2 25 20 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/0e289c46-602d-4617-a9f7-19afe817cc89)
+
+When finished, open ADUC and observe the accounts in the appropriate OU.

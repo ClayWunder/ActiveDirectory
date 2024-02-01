@@ -80,3 +80,20 @@ Return to Client-1 to see the ping succeed.
 - You will be automatically disconnected from DC-1 once complete.
 - Re-log back into DC-1 as user mydomain.com/labuser
 
+<h2>Create Admin and Normal User Account in AD</h2>
+
+![Screenshot 2024-02-01 at 1 46 10 PM](https://github.com/ClayWunder/ActiveDirectory/assets/157168474/dc036758-34e5-4cb5-a6d9-2eb0972ab2c7)
+
+- In AD Users and Computers (ADUC), create an Organizational Unit (OU) called "_EMPLOYEES"
+- Create an Organizational Unit (OU) called "_ADMINS"
+
+
+Create a new employee named "Jane Doe" (same password) with the username of "jane_admin"
+
+
+
+Add jane_admin to the "Domain Admins" Security Group
+
+
+
+Logout / Close the remote desktop connection to DC-1 and log back in as mydomain.com/jane_admin
